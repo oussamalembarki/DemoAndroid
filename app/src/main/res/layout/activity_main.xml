@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eee777"
+    android:background="@color/background"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="15dp"
-        android:background="#fffe11"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="45dp"
-            android:text="Demo Android!!!"
-            android:textColor="#456eee"
-            android:textSize="40sp" />
+            android:text="@string/titre_accueil"
+            android:textColor="@color/text_primary"
+            android:textSize="36sp"
+            android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnNav1"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go To Calculs Activity" />
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/sous_titre_accueil"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="6dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/description_image_calculatrice"
+                android:padding="24dp"
+                android:src="@drawable/calculatrice" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNav1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/bouton_vers_calculs"
+            android:textSize="16sp"
+            app:cornerRadius="30dp" />
 
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>
