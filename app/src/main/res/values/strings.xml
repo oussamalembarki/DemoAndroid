@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">DemoAndroid</string>
+
+    <!-- Écran d'accueil -->
+    <string name="titre_accueil">Demo Android</string>
+    <string name="sous_titre_accueil">Une calculatrice simple et rapide</string>
+    <string name="description_image_calculatrice">Illustration d\'une calculatrice</string>
+    <string name="bouton_vers_calculs">Aller à la calculatrice</string>
+
+    <!-- Écran de calcul -->
+    <string name="titre_calculs">Calculatrice</string>
+    <string name="sous_titre_calculs">Saisissez deux nombres, puis une opération</string>
+    <string name="hint_nombre_1">Premier nombre</string>
+    <string name="hint_nombre_2">Deuxième nombre</string>
+    <string name="symbole_addition">+</string>
+    <string name="symbole_soustraction">−</string>
+    <string name="symbole_multiplication">×</string>
+    <string name="symbole_division">÷</string>
+    <string name="description_addition">Addition</string>
+    <string name="description_soustraction">Soustraction</string>
+    <string name="description_multiplication">Multiplication</string>
+    <string name="description_division">Division</string>
+    <string name="bouton_vers_accueil">Retour à l\'accueil</string>
+
+    <!-- Erreurs -->
+    <string name="erreur_champ_vide">Ce champ est obligatoire</string>
+    <string name="erreur_nombre_invalide">Nombre invalide ou trop grand</string>
+    <string name="erreur_division_zero">Division par zéro impossible</string>
+
+    <!-- Écran de résultat -->
+    <string name="titre_resultat">Résultat</string>
+    <string name="bouton_retour_calculatrice">Retour à la calculatrice</string>
 </resources>
